@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Predictor</title>
+</head>
+<body>
+    <h1>Diabetes Predictor</h1>
+    <p>Por favor, responda a las siguientes preguntas para predecir si es altamente propenso a padecer diabetes, le recomendamos consultar a un médico:</p>
+    <form method="POST" action="/resultado">
+
+        <label>Edad:</label>
+        <input type="number" name="edad"><br><br>
+
+        <label>Género:</label>
+        <input type="radio" name="genero" value="Hombre" checked> Hombre
+        <input type="radio" name="genero" value="Mujer"> Mujer<br><br>
+
+        <label>¿Padece poliuria (micción frecuente) o mucha orina?:</label>
+        <input type="radio" name="poliuria" value="1"> Sí
+        <input type="radio" name="poliuria" value="0" checked> No<br><br>
+
+        <label>¿Padece polidipsia (sed excesiva)?:</label>
+        <input type="radio" name="polidipsia" value="1"> Sí
+        <input type="radio" name="polidipsia" value="0" checked> No<br><br>
+
+        <label>¿Ha experimentado pérdida súbita de peso sin razón aparente?:</label>
+        <input type="radio" name="perdida_subita_de_peso" value="1"> Sí
+        <input type="radio" name="perdida_subita_de_peso" value="0" checked> No<br><br>
+
+        <label>¿Siente debilidad generalizada?:</label>
+        <input type="radio" name="debilidad" value="1"> Sí
+        <input type="radio" name="debilidad" value="0" checked> No<br><br>
+
+        <label>¿Tiene un apetito excesivo?:</label>
+        <input type="radio" name="polifagia" value="1"> Sí
+        <input type="radio" name="polifagia" value="0" checked> No<br><br>
+
+        <label>¿Ha experimentado candidiasis genital, infección?:</label>
+        <input type="radio" name="candidiasis_genital" value="1"> Sí
+        <input type="radio" name="candidiasis_genital" value="0" checked> No<br><br>
+
+        <label>¿Tiene usted visión borrosa?:</label>
+        <input type="radio" name="vision_borrosa" value="1"> Sí
+        <input type="radio" name="vision_borrosa" value="0" checked> No<br><br>
+
+        <label>¿Ha tenido picazón en la piel?:</label>
+        <input type="radio" name="picazon" value="1"> Sí
+        <input type="radio" name="picazon" value="0" checked> No<br><br>
+
+        <label>¿Ha sentido irritabilidad?:</label>
+        <input type="radio" name="irritabilidad" value="1"> Sí
+        <input type="radio" name="irritabilidad" value="0" checked> No<br><br>
+
+        <label>¿Se le curan las heridas lentamente?:</label>
+        <input type="radio" name="curacion_lenta" value="1"> Sí
+        <input type="radio" name="curacion_lenta" value="0" checked> No<br><br>
+
+        <label>¿Ha tenido paresia parcial, debilidad en un los músculos o lado del cuerpo?:</label>
+        <input type="radio" name="paresia_parcial" value="1"> Sí
+        <input type="radio" name="paresia_parcial" value="0" checked> No<br><br>
+
+        <label>¿Tiene rigidez muscular?:</label>
+        <input type="radio" name="rigidez_muscular" value="1"> Sí
+        <input type="radio" name="rigidez_muscular" value="0" checked> No<br><br>
+
+        <label>¿Tiene alopecia, perdida anormal de cabello?:</label>
+        <input type="radio" name="alopecia" value="1"> Sí
+        <input type="radio" name="alopecia" value="0" checked> No<br><br>
+
+        <label>¿Padece Obesidad?:</label>
+        <input type="radio" name="obesidad" value="1"> Sí
+        <input type="radio" name="obesidad" value="0" checked> No<br><br>
+
+        <input type="submit" value="Predecir">
+    </form>
+  </body>
+</html>
