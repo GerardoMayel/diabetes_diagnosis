@@ -7,10 +7,10 @@ import pandas as pd
 app = Flask(__name__)
 
 # Cargar el modelo
-with open('./model/mejor_modelo.pkl', 'rb') as f:
+with open('./artifacts/mejor_modelo.pkl', 'rb') as f:
     modelo = pickle.load(f)
 
-preprocesador = load('./model/preprocessor.joblib')
+preprocesador = load('./artifacts/preprocessor.joblib')
 
 
 @app.route('/')
